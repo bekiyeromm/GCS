@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navigation Bar</title>
+    <style>
+        /* CSS for Vertical Navigation Bar */
+        nav.vertical {
+            width: 200px;
+            /* Set width */
+            background-color: #f0f0f0;
+            /* Background color */
+        }
+
+        nav.vertical ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            /* Remove bullets */
+        }
+
+        nav.vertical li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            /* Add a border bottom */
+        }
+
+        nav.vertical li:last-child {
+            border-bottom: none;
+            /* Remove border bottom from the last item */
+        }
+
+        nav.vertical li a {
+            text-decoration: none;
+            /* Remove underline */
+            color: #333;
+            /* Link color */
+        }
+
+        nav.vertical li a:hover {
+            background-color: #ddd;
+            /* Hover color */
+        }
+        p{
+            width: 500px;
+            height: 200px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 40px;
+        }
+        .oll{
+            display: flex;
+            justify-content: center;
+        }
+        .ull{
+     
+            display: flex;
+            justify-content: center;
+   
+        }
+        .scr{
+            
+            overflow-y: auto;
+            border: 10px solid #ccc;
+            padding: 10px;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <nav class="vertical">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <p class="scr">Requirements
+        Python Scripts
+        All your files will be interpreted/compiled on Ubuntu 18.04 LTS using python3 (version 3.7)
+        All your files should end with a new line
+        The first line of all your files should be exactly #!/usr/bin/env python3
+        A README.md file, at the root of the folder of the project, is mandatory
+        Your code should use the pycodestyle style (version 2.5)
+        All your files must be executable
+        The length of your files will be tested using wc
+        All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
+        All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
+        All your functions (inside and outside a class) should have a documentation (python3 -c
+        'print(__import__("my_module").my_function.__doc__)' and python3 -c
+        'print(__import__("my_module").MyClass.my_function.__doc__)')
+        A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or
+        method (the length of it will be verified)</p>
+        <h1> list       </h1>
+       <div class="oll">
+        <ol>
+            <li>drinking items</li>
+            <li>drinking items</li>
+            <li>drinking items</li>
+            <li>drinking items</li>
+        </ol>
+       </div>
+        <h2> un ordered list</h2>
+       <div class="ull">
+        <ul>
+            <li>food items</li>
+            <li>food items</li>
+            <li>food items</li>
+            <li>food items</li>
+        </ul>
+       </div>
+</body>
+
+</html>
